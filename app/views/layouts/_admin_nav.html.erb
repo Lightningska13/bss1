@@ -1,10 +1,1 @@
-<% if admin? %>
-	<nav id="adminNav">
-		<%=section_link('Categories',:controller => 'product_cats', :action => 'index') %>
-		<%=section_link('Products',:controller => 'products', :action => 'index') %>
-		<%=section_link('Showcase',:controller => 'events', :action => 'index')%>
-		<%=section_link('Users',:controller => 'users', :action => 'index') %>
-		<%= link_to 'Logout', logout_path %>	
-		<span><%= current_user.name %> logged in</span>
-	</nav><!--adminNav -->
-<% end %>
+
