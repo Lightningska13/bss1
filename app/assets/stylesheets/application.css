@@ -170,6 +170,24 @@ footer {
 	font-size: x-small;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
+#thanks {
+	font-size: 12px;
+	color: #000;
+	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
+	padding-right: 10px;
+	margin-top: 15px;
+	height: 450px;
+	border: 2px solid black;
+}
+#thanks h1 {
+	font-size: 24px;
+	font-style: italic;
+	clear: both;
+	padding-left: 10px;
+}
+#thanks p {
+	padding-left: 10px;
+}
 /* Event Calendar */
 #eventListing h1 {
 	color: #000;
