@@ -13,121 +13,53 @@
 */
 body {
 	background-color: #acacac;
+	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
 #wrapper {
 	margin: auto;
 	width: 1000px;
 	background-color: #acacac;
 }
-#logo {
-	float: left;
-	background: url('/assets/bsslogo.gif');
-	width: 100px;
-	height: 100px;
-}
-#search {
-	background-color: #333333;
-	border: #333333;
-	height: 25px;
-	color: #E6E6E6;
-}
-nav {
-	width: 750px;
-	word-spacing: 30px;
-	margin-top: 60px;
-	margin-right: 10px;
-	text-shadow: 0px 3px 5px #282b1f;
-	font-size: large;
-	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
-	font-style: italic;
-	text-align: right;
-	float: right;
-	clear: none;
-}
-nav a:hover {
-	text-decoration: none;
-}
-nav a:link {
-	text-decoration: none;
-}
-nav a:visited {
-	color: #000;
-}
-nav a:active {
-	color: #000;
-}
-#adminNav {
-	word-spacing: 8px;
-	margin-top: -5px;
-}
-#adminNav a {
+nav a {
+	font-size: x-large;
+	color: #000000;
 	text-decoration: underline;
-}
-#adminNav span{
-	font-size: x-small;
-	word-spacing: 2px;
-}
-#mainContent {
-	font-size: 12px;
-	color: #000;
-	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
+	float: right;
 	padding-right: 10px;
-	margin-top: 15px;
-	height: 350px;
 }
-#mainContent h1 {
-	font-size: 21px;
+#banner {
+	width: 1000px;
+	height: 150px;
+}
+#welcome {
+	width: 390px;
+	height: 400px;
+	float: left;
+	margin-left: 40px;
+	font-size: x-large;
 	font-style: italic;
-}
-#mainContent a {
-	color: #000;
-}
-#mainContent a.admin {
-	color: #000;
-}
-#mainContent img {
-	margin-top: 15px;
-	box-shadow: 4px 4px 5px #282b1f;
-	-webkit-box-shadow: 4px 4px 5px #282b1f;
- 	-moz-box-shadow: 4px 4px 5px #282b1f;
-}
-#mainContent img:hover {
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	-o-transform: scale(1.05);
-}
-#storeContent{
-	font-size: 14px;
-	color: #000;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	width: 970px;
-	/*border: 1px solid #E6E6E6;
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px #4C4C4C;*/
 }
-#storeContent h1 {
-	font-size: 21px;
-	font-style: italic;
+#mainContent p {
+	font-size: small;
 }
-#cat_list {
-	width: 970px;
+#leftContent {
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 12px;
+	background: #4c4c4c;
+	margin-bottom: 10px;
+	min-height: 350px;
 }
-#storeCategory {
+#leftContent h1 {
+	text-align: center;
 }
-#storeCategory a.cat {
-	border: 1px solid #E6E6E6;
-	color: #907757;
-	border-right: 0;
-	border-top: 0;
-	text-decoration: none;
-	font-style: italic;
-}
-#storeCategory p {
-	width: 250px;
+#leftContent p {
+	text-align: center;
+	font-size: small;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 #contactContent {
 	clear: both;
@@ -138,35 +70,19 @@ nav a:active {
 }
 #contactContent h1 {
 	font-style: italic;
-	font-size: 21px;
+	font-size: x-large;
 }
 #contactContent p {
-	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
-}
-.leftBox {
-	float: left;
-	width: 300px;
-	margin-right: 30px;
-	margin-top: -25px;
-	opacity: 1;
-	text-shadow: 0px 3px 5px #282b1f;
-}
-.leftBox h1 {
-	margin-bottom: -6px;
-}
-.leftBox img:hover {
-	opacity: .9;
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	font-size: small;
 }
 footer {
 	width: 1000px;
-	height: 20px;
+	height: 15px;
 	text-align: center;
 	padding-top: 20px;
-	color: #000;
+	color: #000000;
+	background: #4c4c4c;
+	clear: both;
 	font-size: x-small;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
@@ -176,11 +92,10 @@ footer {
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 	padding-right: 10px;
 	margin-top: 15px;
-	height: 450px;
-	border: 2px solid black;
+	height: 200px;
 }
 #thanks h1 {
-	font-size: 24px;
+	font-size: x-large;
 	font-style: italic;
 	clear: both;
 	padding-left: 10px;
@@ -188,45 +103,15 @@ footer {
 #thanks p {
 	padding-left: 10px;
 }
-/* Event Calendar */
-#eventListing h1 {
-	color: #000;
-}
-#eventListing a {
-	text-decoration: none;
-	font-size: 18px;
-}
-#eventListing span {
-	font-style: italic;
-}
-#eventListing a {
-	color: #000;
-	text-decoration: underline;
-}
-#eventListing a.admin {
-	color: #000;
-}
-#eventListing dl {
-	font-size: 12px;
-	color: #000;
-}
-#eventListing dt {
-	font-size: 12px;
-	color: #000;
-}
-#eventListing h2.deptDivider {
-	font-size: 24px;
-	color: #666666;
-}
-
 /*Contact Form*/
 fieldset {
 	width: 300px;
 	border: none;
-	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
+	background: #4c4c4c;
+	margin-bottom: 5px;
 }
 .submit {
-	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
+	padding-bottom: 10px;
 }
 input {
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#B2B2B2));
@@ -272,15 +157,4 @@ section.submit input {
 	color: #000;
 	font-size: 10px;
 	word-spacing: 0px;
-}
-/*FancyBox Title*/
-#tip7-title {
-	color: #eb2525;
-	background: #000;
-	opacity: .8;
-	float: right;
-}
-#tip7-title b {
-}
-#tip7-title span {
 }

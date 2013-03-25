@@ -12,11 +12,12 @@
 	<div id="wrapper">
 		<header>
 			<link rel= "shortcut icon" href="/assets/bssinitials.gif"/>
-			<div id="logo">
-			</div><!--endlogo-->
 			<nav>
 				<%= render "/layouts/main_nav" %>
 			</nav>
+			<div id="banner">
+			<%= link_to image_tag('/assets/bssbanner.png'), :controller => 'dash', :action => 'index' %>
+			</div>
 		</header>
 		<%= yield %>
 		<footer>
