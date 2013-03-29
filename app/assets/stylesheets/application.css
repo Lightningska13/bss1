@@ -30,6 +30,8 @@ nav a {
 #banner {
 	width: 1000px;
 	height: 150px;
+	background: url('/assets/bssbanner.png'); background-repeat: no-repeat; width: 1000px; height: 120px;
+	clear: both;
 }
 #welcome {
 	width: 390px;
@@ -60,6 +62,24 @@ nav a {
 	font-size: small;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+#webImage {
+	background: url('/assets/wdbanner.png');
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 150px;
+}
+#printImage {
+	background: url('/assets/pgdbanner.png');
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 150px;	
+}
+#brandImage {
+	background: url('/assets/brandbanner.png');
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 150px;
 }
 #contactContent {
 	clear: both;
