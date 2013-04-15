@@ -1,0 +1,27 @@
+<h1>Listing sample_cats</h1>
+
+<table>
+  <tr>
+    <th>Cat name</th>
+    <th>Featured</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sample_cats.each do |sample_cat| %>
+  <tr>
+    <td><%= sample_cat.cat_name %></td>
+    <td><%= sample_cat.featured %></td>
+    <td><%= sample_cat.description %></td>
+    <td><%= link_to 'Show', sample_cat %></td>
+    <td><%= link_to 'Edit', edit_sample_cat_path(sample_cat) %></td>
+    <td><%= link_to 'Destroy', sample_cat, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sample cat', new_sample_cat_path %>

@@ -1,0 +1,13 @@
+<% @samples.each do |sample| %>
+	<div id="sampleList">	
+		<h2><%= link_to sample.title, sample %></h2>
+		<%= image_tag(sample.pic.url(:medium)) %>
+		<p><%= sample.description %><br />
+		<%= link_to sample.url, format_url(sample.url), :target => '_blank' %></p>
+		<% if admin? %>
+			<%= link_to 'Show', sample %>
+			<%= link_to 'Edit', edit_sample_path(sample) %>
+			<%= link_to 'Destroy', sample, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+		<% end %>
+	</div>
+<% end %>

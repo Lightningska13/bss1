@@ -1,6 +1,10 @@
 Bss1::Application.routes.draw do
+  resources :sample_cats
+
+  resources :samples
+
   resources :users
-    resources "user_sessions"
+  resources :user_sessions
     resources "thanks"
 
   	match 'login' => "user_sessions#new",      :as => :login
@@ -9,6 +13,9 @@ Bss1::Application.routes.draw do
   	match 'new_contact' =>  'contact_us#new', :conditions => { :method => :get }
   	resources :contact_us, :only => [:new, :create]
   	match 'contact_us' => 'contact_us#new'
+  	match 'web' => 'web#index', :as => :web
+  	match 'branding' => 'branding#index', :as => :branding
+  	match 'print' => 'print#index', :as => :print
   	
   	 	
   	root :to => "dash#index"

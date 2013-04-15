@@ -27,6 +27,8 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
+gem 'authlogic'
+gem 'paperclip', "~>2.7"
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

@@ -1,1 +1,4 @@
-
+<% if admin? %>
+		<%= link_to 'New Sample', new_sample_path %>
+		<%= link_to 'Logout', logout_path %> | Currently logged in	
+<% end %>

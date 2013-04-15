@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<div id="sampleShow">
+  <h2><%= @sample.title %></h2>
+		<%= image_tag @sample.pic.url(:large) if @sample.pic_file_name.present? %>
+	<p><%= @sample.description %><br />
+		<b>Visit their website at: </b><%= link_to @sample.url, format_url(@sample.url), :target => '_blank' %></p>
+<% if admin? %>
+	<%= link_to 'Edit', edit_sample_path(@sample) %> |
+	<%= link_to 'Back', samples_path %>
+<% end %>
+</div>

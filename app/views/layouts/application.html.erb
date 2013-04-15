@@ -37,11 +37,14 @@
 	<div id="wrapper">
 		<header>
 			<link rel= "shortcut icon" href="/assets/bssinitials.gif"/>
-			<nav>
-				<%= render "/layouts/main_nav" %>
-			</nav>
 			<div id="banner">
 			</div>
+			<nav>
+				<%= render "/layouts/main_nav" %>
+				<% if admin? %>
+				<%= render "/layouts/admin_nav" %>
+				<% end %>
+			</nav>
 		</header>
 		<%= yield %>
 		<footer>

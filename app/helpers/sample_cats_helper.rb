@@ -1,0 +1,2 @@
+module SampleCatsHelper
+end

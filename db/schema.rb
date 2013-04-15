@@ -10,6 +10,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130401183609) do
+
+  create_table "sample_cats", :force => true do |t|
+    t.string   "cat_name"
+    t.boolean  "featured"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "samples", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.string   "description"
+    t.string   "pic_file_name"
+    t.integer  "pic_file_size"
+    t.integer  "sample_cat_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "pic_content_type"
+  end
 
 end
