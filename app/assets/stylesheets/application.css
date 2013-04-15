@@ -145,12 +145,12 @@ nav a:hover {
 }
 footer {
 	width: 1000px;
-	height: 15px;
+	height: 20px;
 	text-align: center;
 	color: #000000;
 	background: #4c4c4c;
 	clear: both;
-	font-size: x-small;
+	font-size: small;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
 #thanks {
