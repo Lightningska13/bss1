@@ -159,7 +159,6 @@ footer {
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 	padding-right: 10px;
 	margin-top: 15px;
-	height: 200px;
 }
 #thanks h1 {
 	font-size: x-large;
@@ -169,6 +168,8 @@ footer {
 }
 #thanks p {
 	padding-left: 10px;
+}
+#thanksLeft {
 }
 /*Contact Form*/
 fieldset {
