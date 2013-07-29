@@ -36,13 +36,19 @@ nav a:hover {
 	clear: both;
 }
 #welcome {
-	width: 400px;
-	height: 420px;
+	width: 450px;
+	height: 430px;
 	float: left;
 	margin-left: 30px;
-	font-size: x-large;
+	font-size: 21px;
 	font-style: italic;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
+}
+#dashSlider {
+	width: 500px;
+	float: left;
+	height: 420px;
+	padding-top: 10px;
 }
 #mainContent p {
 	font-size: small;
@@ -173,7 +179,7 @@ footer {
 }
 /*Contact Form*/
 fieldset {
-	width: 300px;
+	width: 350px;
 	border: none;
 	background: #4c4c4c;
 	margin-bottom: 5px;
