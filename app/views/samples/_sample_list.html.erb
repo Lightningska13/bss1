@@ -1,9 +1,9 @@
 <% @samples.each do |sample| %>
-	<div id="sampleList">	
-		<h2><%= link_to sample.title, sample %></h2>
-		<%= image_tag(sample.pic.url(:medium)) %>
-		<p><%= sample.description %><br />
-		<%= link_to sample.url, format_url(sample.url), :target => '_blank' %></p>
+	<div class="sampleList">	
+		<h1><%= image_tag ('/assets/bssuser40.gif') %><%= sample.title %></h1>
+		<h2><%= image_tag ('/assets/bssurl40.gif'), :align => 'absmiddle' %><%= link_to sample.url, format_url(sample.url), :target => '_blank' %></h2>
+		<div class="sampleImage"><%= image_tag(sample.pic.url(:medium)) %></div>
+		<p><%= sample.description %></p>
 		<% if admin? %>
 			<%= link_to 'Show', sample %>
 			<%= link_to 'Edit', edit_sample_path(sample) %>

@@ -1,29 +1,28 @@
 <section id="contactContent">
-	<h1>Contact Us</h1>
-		<p>We would love to discuss your web-based and graphical needs.</p>
-		<p>Start your voyage with the form below:</p>
+	<h1 style="color:#000000; margin-bottom:-20px;">Start your VOYAGE with us by</h1>
+	<h1>filling out the form below:</h1>
 <%= form_for(:contact_us, :url => contact_us_url, :html => { :class => 'contact' }) do |f| %>
 	<section class="formSection" style="border:none;">
   	<fieldset>
-  	<section class="input_block" style="float:left;">
+  	<section class="input_block">
 		<%= f.label :name %>
-    	<%= f.text_field :name, :size=>"40" %>
+    	<%= f.text_field :name, :size=>"50" %>
   	</section>
-  	<section class="input_block" style="float:left;">
+  	<section class="input_block">
 	<br />
 		<%= f.label :email %>
-    	<%= f.text_field :email, :size=>"40" %>
+    	<%= f.text_field :email, :size=>"50" %>
   	</section>
-  </fieldset>
-  <fieldset>
 	<section class="input_block">
+	<br />
 		<%= f.label :message %>
-    	<%= f.text_area :message, :rows => "7", :cols=>"40"%>
+    	<%= f.text_area :message, :rows => "7", :cols=>"60"%>
   	</section>
-  </fieldset>
 	<section class="submit">
   		<%= f.submit 'Submit' %>
 	</section>
+  </fieldset>
 </section>
 <% end %>
 </section>
+<div id="contactimage"><%= image_tag ("/assets/contactlogo.png") %></div>

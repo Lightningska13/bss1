@@ -7,133 +7,91 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
+ * ALBION COLLEGE PURPLE: #330066
  *= require_self
  *= require_tree .
 */
 body {
-	background-color: #acacac;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
 #wrapper {
 	margin: auto;
 	width: 1000px;
-	background-color: #acacac;
-}
-nav a {
-	font-size: large;
-	color: #000000;
-	text-decoration: underline;
-	padding-right: 10px;
-}
-nav a:hover {
-	opacity: .7;
 }
 #banner {
 	width: 1000px;
 	height: 150px;
-	background: url('/assets/bssbanner.png'); background-repeat: no-repeat; width: 1000px; height: 120px;
-	clear: both;
+	background: #bdbdbd;
 }
-#welcome {
-	width: 450px;
-	height: 430px;
+#banner a {
+	font-size: x-large;
+	text-decoration: none;
 	float: left;
-	margin-left: 30px;
-	font-size: 21px;
-	font-style: italic;
-	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
-#dashSlider {
-	width: 500px;
-	float: left;
-	height: 420px;
-	padding-top: 10px;
-}
-#mainContent p {
-	font-size: small;
-}
-#leftContent {
-	width: 300px;
-	float: left;
-	margin-left: 20px;
-	margin-right: 12px;
-	background: #4c4c4c;
-	margin-bottom: 10px;
-	min-height: 350px;
-}
-#leftContent h1 {
+#banner p {
 	text-align: center;
+	clear: both;
+	padding-top: 30px;
 }
-#leftContent h1 a {
+.voyages {
+	float: left;
+	padding-top: 90px;
+	padding-left: 30px;
+	font-size: x-large;
+}
+.voyages a {
 	color: #000000;
 }
-#leftContent h1 a:hover {
-	opacity: .7;
+.voyages a:hover {
+	color: #330066;
 }
-#leftContent p {
-	text-align: center;
-	font-size: small;
-	padding-left: 5px;
+.voyages img {
+	float: left;
 	padding-right: 5px;
 }
-#webImage {
-	background: url('/assets/wdbanner.png');
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 150px;
+#mainContent {
 }
-#printImage {
-	background: url('/assets/pgdbanner.png');
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 150px;	
+#mainContent h1 {
+	font-size: 48px;
 }
-#brandImage {
-	background: url('/assets/brandbanner.png');
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 150px;
+ul {
+	list-style-image: url('/assets/bssarrow.png');
 }
-#sampleList {
-	width: 489px;
-	height: 350px;
+li {
+	font-size: large;
+	padding-bottom: 20px;
+}
+.sampleList {
+	width: 500px;
+	min-height: 350px;
 	float: left;
-	padding-left: 10px;
-	padding-top: 15px;
-	border-bottom: 1px solid #000000;
 }
-#sampleList a {
+.sampleList a {
+	text-decoration: none;
+	padding-left: 10px;
 	color: #000000;
 }
-#sampleList a:hover {
+.sampleList a:hover {
 	opacity: .7;
 }
-#sampleList h2 {
-	margin-top: 0px;
+.sampleList h2 {
+	font-size: large;
+	margin-top: -15px;
 }
-#sampleList p {
+.sampleList h2 a {
+	color: #330066;
+}
+.sampleList p {
 	font-size: medium;
 	font-style: italic;
-	width: 300px;
-	float: right;
+	width: 450px;
 	margin-top: 0px;
 	margin-right: 20px;
 }
-#sampleList img {
-	padding-right: 5px;
+.sampleList img {
 }
-#sampleShow {
-	width: 1000px;
-}
-#sampleShow h2 {
-	margin-top: 0px;
-}
-#sampleShow p {
-	float: right;
-	font-style: italic;
-	width: 590px;
-	margin-top: 0px;
+.sampleImage img {
+	padding-left: 80px;
 }
 #contactContent {
 	clear: both;
@@ -144,80 +102,77 @@ nav a:hover {
 }
 #contactContent h1 {
 	font-style: italic;
-	font-size: x-large;
+	font-size: 36px;
+	width: 500px;
+	color: #330066;
 }
 #contactContent p {
 	font-size: small;
 }
 footer {
 	width: 1000px;
-	height: 20px;
+	height: 150px;
 	text-align: center;
 	color: #000000;
-	background: #4c4c4c;
 	clear: both;
-	font-size: small;
+	font-size: large;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 }
+.inquiries {
+	float: left;
+	margin-top: 10px;
+	padding-left: 65px;
+	font-size: x-large;
+}
+.inquiries a {
+	color: #000000;
+}
+.inquiries a:hover {
+	color: #330066;
+}
+.inquiries img {
+	float: left;
+	padding-right: 5px;
+}
 #thanks {
-	font-size: 12px;
-	color: #000;
+	font-size: medium;
+	float: left;
+	width: 500px;
 	font-family: "Segoe UI", Candara,"Bitstream Vera Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif;
 	padding-right: 10px;
 	margin-top: 15px;
 }
 #thanks h1 {
-	font-size: x-large;
+	font-size: xx-large;
 	font-style: italic;
 	clear: both;
+	color: #330066;
 	padding-left: 10px;
 }
 #thanks p {
 	padding-left: 10px;
 }
-#thanksLeft {
-}
 /*Contact Form*/
 fieldset {
-	width: 350px;
+	width: 500px;
+	float: left;
 	border: none;
-	background: #4c4c4c;
-	margin-bottom: 5px;
+	background: #bdbdbd;
+	margin-bottom: 20px;
 }
 .submit {
 	padding-bottom: 10px;
 }
 input {
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#B2B2B2));
- 	background-image: -moz-linear-gradient(19% 75% 90deg,#B2B2B2, #E6E6E6);
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
+	background: #ffffff;
 }
 textarea {
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#B2B2B2));
- 	background-image: -moz-linear-gradient(19% 75% 90deg,#B2B2B2, #E6E6E6);
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
+	background: #ffffff;
 }
 section.submit input {
 	width: 60px;
 	height: 30px;
-	margin-left: 15px;
-}
-#googleMap {
-	width: 400px;
-	float:right;
-	clear: none;
-	margin-top: -430px;
-	padding-right: 20px;
-}
-#contactContent {
-	width: 600px;
-	clear: both;
+	margin-top: 15px;
 }
 /*Login*/
 .login {
